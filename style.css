@@ -1,0 +1,72 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  overflow: hidden;
+  margin-right: 300px;
+  /* margin: auto; */
+  margin-top: 800px;
+}
+
+.perspective-text {
+  color: white;
+  font-family: Arial;
+  font-size: 208px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+.perspective-line {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+p {
+  margin: 0;
+  height: 200px;
+  line-height: 200px;
+  transition: all 0.5s ease-in-out;
+}
+
+.perspective-line:nth-child(odd) {
+  transform: skew(60deg, -30deg) scaleY(0.667);
+}
+
+.perspective-line:nth-child(even) {
+  transform: skew(0deg, -30deg) scaleY(1.337);
+}
+
+.perspective-text:hover p {
+  transform: translate(0, -200px);
+}
+
+.perspective-line:nth-child(1) {
+  left: -55px;
+}
+
+.perspective-line:nth-child(2) {
+  left: 58px;
+  background: #FAE3C6;
+}
+
+.perspective-line:nth-child(3) {
+  left: 172px;
+  background: #FAA4BD;
+}
+
+.perspective-line:nth-child(4) {
+  left: 284px;
+  background: #F564A9;
+}
+
+.perspective-line:nth-child(5) {
+  left: 374px;
+}
+
