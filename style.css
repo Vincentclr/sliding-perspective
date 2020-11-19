@@ -7,16 +7,12 @@ body {
   align-items: center;
   justify-content: center;
   background: black;
-  overflow: hidden;
-  margin-right: 300px;
-  /* margin: auto; */
-  margin-top: 800px;
 }
 
 .perspective-text {
   color: white;
   font-family: Arial;
-  font-size: 208px;
+  font-size: 100px;
   font-weight: 900;
   letter-spacing: -2px;
   text-transform: uppercase;
